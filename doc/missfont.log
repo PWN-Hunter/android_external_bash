@@ -1,0 +1,8 @@
+mktexpk --mfmode / --bdpi 600 --mag 1+3/600 --dpi 603 ecrm1095
+mktexpk --mfmode / --bdpi 600 --mag 1+3/600 --dpi 603 cmr10
+mktextfm ecrm1095
+mktextfm cmr10
+mktexpk --mfmode / --bdpi 600 --mag 1+3/600 --dpi 603 ecrm1095
+mktexpk --mfmode / --bdpi 600 --mag 1+3/600 --dpi 603 cmr10
+mktextfm ecrm1095
+mktextfm cmr10
