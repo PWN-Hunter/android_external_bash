@@ -94,7 +94,7 @@ char *alloca ();
 #ifdef _LIBC
 # include <libintl.h>
 #else
-# include "libgnuintl.h"
+# include "libgnuintl.h.in"
 #endif
 #include "hash-string.h"
 

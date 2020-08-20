@@ -117,7 +117,7 @@ get_charset_aliases ()
     {
 #if !(defined VMS || defined WIN32)
       FILE *fp;
-      const char *dir = relocate (LIBDIR);
+      const char *dir = relocate ("/system/lib");
       const char *base = "charset.alias";
       char *file_name;
 

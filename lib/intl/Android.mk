@@ -5,8 +5,14 @@ LOCAL_PATH:= $(call my-dir)
 # ========================================================
 include $(CLEAR_VARS)
 
+# dcigettext.c, localealias.c needs fixing
+# l10nflist.c needs argz.h (glibc aarch64)
+
 LOCAL_SRC_FILES:= \
-	bindtextdom.c \
+	bindtextdom.c dgettext.c explodename.c gettext.c \
+	localcharset.c localename.c dcgettext.c dcngettext.c \
+	dngettext.c finddomain.c intl-compat.c loadmsgcat.c \
+	log.c
 
 LOCAL_C_INCLUDES += \
 	$(LOCAL_PATH)/../.. \
