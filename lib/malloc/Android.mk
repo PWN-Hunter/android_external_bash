@@ -1,18 +1,12 @@
 LOCAL_PATH:= $(call my-dir)
 
 # ========================================================
-# libglob.a
+# malloc
 # ========================================================
 include $(CLEAR_VARS)
 
-# BROKEN: glob_loop.c sm_loop.c
-
 LOCAL_SRC_FILES:= \
-	glob.c \
-	smatch.c \
-	strmatch.c \
-	xmbsrtowcs.c \
-	gmisc.c
+	alloca.c
 
 LOCAL_C_INCLUDES += \
 	$(LOCAL_PATH)/../.. \
@@ -30,7 +24,7 @@ LOCAL_CFLAGS += \
 
 LOCAL_MODULE_TAGS := optional
 
-LOCAL_MODULE := libglob
+LOCAL_MODULE := malloc
 
 include $(BUILD_STATIC_LIBRARY)
 

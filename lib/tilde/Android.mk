@@ -5,6 +5,8 @@ LOCAL_PATH:= $(call my-dir)
 # ========================================================
 include $(CLEAR_VARS)
 
+# Broken: shell.c
+
 LOCAL_SRC_FILES:= \
 	tilde.c
 

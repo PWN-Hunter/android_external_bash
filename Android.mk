@@ -5,14 +5,16 @@ LOCAL_PATH:= $(call my-dir)
 # ========================================================
 include $(CLEAR_VARS)
 
+# Somehow broken: nojobs.c
+
 LOCAL_SRC_FILES:= \
-	shell.c eval.c y.tab.c general.c make_cmd.c print_cmd.c \
-	dispose_cmd.c execute_cmd.c variables.c copy_cmd.c error.c \
-	expr.c flags.c jobs.c subst.c hashcmd.c hashlib.c mailcheck.c \
-	trap.c input.c unwind_prot.c pathexp.c sig.c test.c version.c \
-	alias.c array.c arrayfunc.c assoc.c braces.c bracecomp.c \
-	bashhist.c bashline.c list.c stringlib.c locale.c findcmd.c \
-	redir.c pcomplete.c pcomplib.c syntax.c xmalloc.c
+	shell.c assoc.c bracecomp.c dispose_cmd.c execute_cmd.c flags.c hashlib.c \
+	list.c make_cmd.c pathexp.c print_cmd.c sig.c subst.c trap.c version.c \
+	array.c bashhist.c braces.c error.c expr.c general.c input.c locale.c \
+	pcomplete.c redir.c siglist.c syntax.c unwind_prot.c xmalloc.c \
+	arrayfunc.c bashline.c copy_cmd.c eval.c findcmd.c hashcmd.c jobs.c mailcheck.c \
+	pcomplib.c alias.c test.c stringlib.c variables.c y.tab.c
+	
 LOCAL_C_INCLUDES += \
 	$(LOCAL_PATH) \
 	$(LOCAL_PATH)/include \
@@ -36,7 +38,8 @@ LOCAL_STATIC_LIBRARIES += \
 	libtilde \
 	libhistory \
 	libreadline \
-	libintl
+	libintl \
+	malloc
 LOCAL_CFLAGS += \
 	-Wno-char-subscripts \
 	-Wno-format \
