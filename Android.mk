@@ -35,7 +35,8 @@ LOCAL_STATIC_LIBRARIES += \
 	libsh \
 	libtilde \
 	libhistory \
-	libreadline
+	libreadline \
+	libintl
 LOCAL_CFLAGS += \
 	-Wno-char-subscripts \
 	-Wno-format \
